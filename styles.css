@@ -1,0 +1,493 @@
+/**Background**/
+head,body{
+  background-image:  url("images/headerBg.png");
+  background-repeat: no-repeat;
+  
+}
+
+
+
+header {
+  height:170px;
+}
+/**
+Fix the Icon's position
+*/
+.icon1{
+  position:absolute;
+  left:360px;
+  top:47px;
+}
+.icon2{
+  position:absolute;
+  left: 468px;
+  top:47px;
+}
+.icon3{
+  position:absolute;
+  left: 556px;
+  top:66px;
+
+}
+.icon6{
+  position:absolute;
+  right:360px;
+  top:73px;
+}
+
+.icon4{
+  position:absolute;
+  right:360px;
+  top:90px;
+}
+.icon5{
+  position:absolute;
+  right: 411px;
+  top:90px;
+}
+/** nav **/
+
+
+nav{
+    width:auto;
+    text-align: center;
+    color:white;
+    min-width: 1920px;
+    background-color:#1475cd;
+    padding-top:6px;
+    border-bottom: 4px solid red;
+  }
+  nav a:link{
+    color:white;
+    text-decoration:none;
+  }
+  nav a:hover{
+    color:#20b283;
+  }
+  nav a{
+    display:inline-block;
+    font-size: 18px;
+    width:9%;
+    padding-bottom:10px;
+    padding-top:10px;
+    color: white;
+  }
+
+  /** Making Head (点位地图副标题） **/
+
+  .ccc{ 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+  
+  }
+
+  /** Making Container (将图分成3个部分）**/
+
+  .item0 {
+    grid-area: top;
+    min-width: 1200px;
+  }
+  .item1 {
+    grid-area: left;
+    min-width: 360px;
+  }
+  .item2 {
+    grid-area: pic;
+    min-width: 1200px;
+  }
+  .item3 {
+    grid-area : right;
+    min-width: 360px;
+  }
+  .item4{
+    grid-area : head;
+    min-width: 1200px;
+  }
+  .item5{
+    grid-area:nav;
+    min-width: 1200px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+    '. head .' 
+    '. nav .' 
+    'left  top    right'
+    'left  pic    right';
+
+  }
+
+/**
+Add color to the pic
+**/
+
+
+.pic1, .pic2, .pic4,.pic6,.pic7,.pic8,.pic9, .pic11, .pic12, .pic14, .pic16, .pic17, .pic18, .pic19, .pic20, .pic21, .pic22{
+  background-image:url("images/红2.png");
+  background-size: cover;
+  width:28px;height:37px;
+  padding: 20px;
+  position:absolute;
+  z-index:1;
+
+
+}
+/* Make div
+**/
+p{
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+}
+.item2 .biaoti{
+  color:red;
+  padding-bottom: -20px;
+  text-align: left;
+  font-size: 20px;
+}
+.figu1{
+  top: -200px;
+  left:18px;
+  padding: 1em;
+  background-color: white;
+  color: #777777;
+  position:absolute;
+  text-align: left;
+  border: 1px solid red;
+  height:100px;
+  width:150px;
+  border-radius: 3%;
+  
+}
+.figu2{
+  top: 52px;
+  right: 740px;
+  padding: 1em;
+  background-color: white;
+  color: #777777;
+  position:absolute;
+  text-align: left;
+  border: 1px solid red;
+  height:100px;
+  width:150px;
+  border-radius: 3%;
+}
+.figu3{
+  top: 50px;
+  left: 20px;
+  padding: 1em;
+  background-color: white;
+  color: #777777;
+  position:absolute;
+  text-align: left;
+  border: 1px solid red;
+  height:120px;
+  width:150px;
+  border-radius: 3%;
+}
+
+.pic3, .pic5, .pic10, .pic13, .pic15{
+  background-image:url("images/灰.png");
+  width:28px;height:37px;
+  background-size:cover;
+  padding: 20px;
+  position:absolute;
+  z-index:1;
+
+}
+/* Make div position: relative
+make icon position: absolute
+make icon have top: ..px and left: ..px (change number)  */
+
+.item2 .first{
+  margin-left:83px;
+  width: 1119px;
+  height:250px;
+  border-top:3px solid #bbbbbb;
+  border-right:3px solid #bbbbbb;
+  position: relative;
+}
+
+.item2 .second{
+  width: 1200px;
+  height:250px;
+  border-top:3px solid #bbbbbb;
+  border-left:3px solid #bbbbbb;
+  position: relative;
+}
+.item2 .third{
+  width: 1200px;
+  height:250px;
+  border:3px solid #bbbbbb;
+  border-left:0px solid #bbbbbb;
+  position: relative;
+}
+.item2 .fourth{
+  width: 395px;
+  height:250px;
+  border-left:3px solid #bbbbbb;
+  border-bottom:3px solid #bbbbbb;
+  position: relative;
+}
+/**
+Write down the subtitle for each icon
+*/
+.name1,.name3, .name8, .name11, .name13{
+  position:absolute;
+  color:#777777;
+  
+}
+.name2, .name4, .name5, .name6, .name7, .name9,.name10,.name12,.name14,.name15,.name16,.name17,.name18,.name19{
+  position:absolute;
+  color: red;
+}
+.name1{
+  right: 565px;
+  top:52px;
+}
+.name2{
+  right: 300px;
+  top:52px;
+}
+.name3{
+  right: 87px;
+  top:52px;
+}
+.name4{
+  left: 80px;
+  top:52px;
+}
+.name5{
+  left:327px;
+  top:52px;
+}
+.name6{
+  left: 570px;
+  top: 52px;
+}
+.name7{
+  top:52px;
+  left: 810px;
+}
+.name8{
+  top:52px;
+  left: 1048px;
+}
+
+.name9{
+  left: 80px;
+  top:52px;
+}
+.name10{
+  left:320px;
+  top:52px;
+}
+.name11{
+  left: 555px;
+  top: 52px;
+}
+.name12{
+  top:52px;
+  left: 802px;
+}
+.name13{
+  top:52px;
+  left: 1044px;
+}
+.name14{
+  left:320px;
+  bottom:-72px;
+}
+.name15{
+  left: 564px;
+  bottom:-72px;
+}
+.name16{
+  bottom:-72px;
+  left: 819px;
+}
+.name17{
+  bottom:-72px;
+  left: 1006px;
+}
+.name18{
+  left: 80px;
+  bottom:-72px;
+}
+.name19{
+  left: 325px;
+  bottom:-90px;
+}
+
+
+
+/**
+Make place for each pic (icon)
+*/
+.pic1 {
+  top: -40px;
+  left: 0px;
+}
+.pic2 {
+  top: -40px;
+  right: 807px;
+}
+.pic3{
+  top: -40px;
+  right:565px;
+}
+.pic4{
+  top: -40px;
+  right:324px;
+}
+.pic5{
+  top: -40px;
+  right:87px;
+}
+.pic6 {
+  bottom: -40px;
+  left: 0px;
+}
+.pic7 {
+  bottom: -40px;
+  right: 807px;
+}
+.pic8{
+  bottom: -40px;
+  right:565px;
+}
+.pic9{
+  bottom: -40px;
+  right:324px;
+}
+.pic10{
+  bottom: -40px;
+  right:87px;
+}
+.pic11 {
+  bottom: -40px;
+  left: 85px;
+}
+.pic12 {
+  bottom: -40px;
+  left: 325px;
+}
+.pic13{
+  bottom: -40px;
+  left:565px;
+}
+.pic14{
+  bottom: -40px;
+  left:805px;
+}
+.pic15{
+  bottom: -40px;
+  left:1045px;
+}
+.pic16 {
+  bottom: -40px;
+  left: 85px;
+}
+.pic17 {
+  bottom: -40px;
+  left: 325px;
+}
+.pic18{
+  bottom: -40px;
+  left:565px;
+}
+.pic19{
+  bottom: -40px;
+  left:805px;
+}
+.pic20{
+  bottom: -40px;
+  left:1045px;
+}
+.pic21 {
+  bottom: -40px;
+  left: 85px;
+}
+.pic22 {
+  bottom: -40px;
+  left: 325px;
+}
+
+
+
+
+
+  /** foot **/
+
+  footer {
+    background-color: #dddddd;
+    margin: 30% 0 0 0;
+  }
+
+  /**header**/
+
+  header {
+    text-align: center;
+    }
+
+  
+
+/** Figure **/
+  figure.icon7 {
+    background-color: #f44848;
+
+  }
+  
+  figure.icon8{
+    background-color: #23c164;
+    
+  }
+  figure.icon9{
+    background-color: #fd7b01;
+
+  }
+  figure.icon10{
+    background-color: #4ea0ea;
+  }
+
+  /** design for figure (4个小链接） **/
+
+
+  figure{
+  text-align: center;
+  padding-top:7px;
+  padding-bottom:3px;
+  color:white;  
+  width: 80px;
+  
+}
+.icon7_1{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+
+/** design for the footer **/
+.foot-image {
+  background-image:#dddddd;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+  width: 50%;
+}
+
+
+#footer {
+  background: #dddddd;
+  height: 50px;
+  color:#777777;
+  text-align: center;
+  padding-top:3px;
+  min-width: 1920px;
+}
+
+
